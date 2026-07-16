@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Project Latte</title>
+
+  <link rel="icon" href="images/favicon.png" type="image/png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <main>
+    <h1>Sip Slow, Stay Awhile</h1>
+
+    <p>
+      A quiet little cafe made for slow mornings and warm drinks.
+    </p>
+
+    <img src="images/latte.jpg" alt="A steaming coffee mug on a sunlit table">
+
+
+    <section class="music-section">
+      <h2>Choose Your Café Sound</h2>
+
+      <div class="track-list">
+        <button class="track-button track-button--rainy-morning" type="button" data-track="audio/rainy-morning.mp3"
+          data-title="Rainy Morning" aria-pressed="false">
+          Rainy Morning
+        </button>
+
+        <button class="track-button track-button--sunny-morning" type="button" data-track="audio/sunny-morning.mp3"
+          data-title="Sunny Morning" aria-pressed="false">
+          Sunny Morning
+        </button>
+
+        <button class="track-button track-button--rainy-night" type="button" data-track="audio/rainy-night.mp3"
+          data-title="Rainy Night" aria-pressed="false">
+          Rainy Night
+        </button>
+
+        <button class="track-button track-button--fireside-night" type="button" data-track="audio/fireside-night.mp3"
+          data-title="Fireside Night" aria-pressed="false">
+          Fireside Night
+        </button>
+      </div>
+
+      <p class="track-status" aria-live="polite">
+        Choose a sound to begin.
+      </p>
+      <audio class="audio-player" preload="metadata"></audio>
+    </section>
+  </main>
+</body>
+
+</html>
